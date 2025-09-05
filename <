@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void)
+{
+  float a, b, c = 0;
+  char o = '0';
+
+  printf("Prompt an operation (<a> <operator> <b>): ");
+  scanf("%f %c %f", &a, &o, &b);
+
+  if (o == "/") {
+   c = a / b; 
+  } else if (o == "*") {
+    c = a * b;
+  } else if (o == "+") {
+    a + b;
+  } else if (o == "-") {
+    a - b;
+  } else {
+    printf("Unknown operator");
+    return 1;
+  }
+
+  printf("%d %c %d = %d", a, o, b, c);
+
+  return 0;
+}

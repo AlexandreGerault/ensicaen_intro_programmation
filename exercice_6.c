@@ -7,8 +7,6 @@ int main(void)
   char* line = NULL;
   size_t line_size = 0;
 
-  getline(&line, &line_size, stdin);
-  n = (int) strtol(line);
   printf("What number to you want to test parity? ");
   int conversions = scanf("%d", &n);
 
@@ -21,3 +19,4 @@ int main(void)
 
   return 0;
 }
+

@@ -13,3 +13,4 @@ int main(void)
 
   printf("A: %d\nB: %d\n", a, b);
 }
+
